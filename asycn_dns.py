@@ -89,9 +89,6 @@ class AsyncResolver(object):
 	
 if __name__ == "__main__":
 
-    #hosts=['www.google.com','www.reddit.com','wwww.nonexist.com']
-    #hosts='hosts'
-    #hostIP='2hostIP'
     hosts=sys.argv[1]
     hostIP=sys.argv[2]
     intensity=sys.argv[3]
