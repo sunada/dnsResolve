@@ -44,9 +44,9 @@ class ThreadClass(threading.Thread):
 		self.host=host
 		threading.Thread.__init__(self)
 
-	def run(self,host,IPs):
+	def run(self):
 		try:
-			res=socket.getaddrinfo(host,None)
+			res=socket.getaddrinfo(self.host,None)
 			for re in res:
 				print host, re[4][0]
 		except Exception, e:
@@ -58,6 +58,7 @@ def MulThreadResolve(fr,fw):
 	IPs={}
 	threads=[]
 	for host in hosts:
+		print host
 		t=ThreadClass(host)
 		threads.append(t)
 			
