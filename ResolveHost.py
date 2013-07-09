@@ -40,13 +40,11 @@ def SynResolve(fr,fw):
 	file.close()
 
 class ThreadClass(threading.Thread):
-	def __init__(self,queue):
-		self.queue=queue
+	def __init__(self,host):
+		self.host=host
 		threading.Thread.__init__(self)
 
 	def run(self,host,IPs):
-		host=self.queue.get()
-
 		try:
 			res=socket.getaddrinfo(host,None)
 			for re in res:
@@ -54,15 +52,24 @@ class ThreadClass(threading.Thread):
 		except Exception, e:
 			print e
 
-		self.queue.task_done()
 
 def MulThreadResolve(fr,fw):
 	hosts=ReadHost(fr)
-	#IPs={}
+	IPs={}
+	threads=[]
+	for host in hosts:
+		t=ThreadClass(host)
+		threads.append(t)
+			
+	cntHost=len(hosts)
+	for i in range(cntHost):
+		threads[i].start()
 
-	
+	for i in range(cntHost):
+		threads[i].join()
 
 if __name__=='__main__':
 	start=time.time()
-	SynResolve('hosts','IPs')
+	#SynResolve('hosts','IPs')
+	MulThreadResolve('hosts','IPs')
 	print time.time()-start
