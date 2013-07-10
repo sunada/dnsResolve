@@ -84,7 +84,13 @@ def CntHost(IPhost):
 	return len(host)
 
 if __name__=='__main__':
-	#SynResolve('hosts','IPs')
+	'''
+	#resolve hosts one by one
+	SynResolve('hosts','IPs')
+	'''
+
+	'''
+	#each thread resolve one host
 	IPhost={}
 	mutex=threading.Lock()
 	MulThreadResolve('host1')
@@ -94,3 +100,6 @@ if __name__=='__main__':
 	#print res
 	#for item in res:
 	#	print item[1],' ',item[0]
+	'''
+
+
