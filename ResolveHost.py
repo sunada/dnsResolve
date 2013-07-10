@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import socket
-import time
+from time import ctime
 import threading
 import Queue
 
@@ -21,8 +21,9 @@ def ReadHost(f):
 def WriteIPs(f,IPs):
 	file=open(f,'a')
 	for ip in IPs:
-		file.write(IPs[ip]+'	'+ip+'\n')
+		file.write(ip[1]+'		'+ip[0]+'\n')
 	file.close()
+
 
 def SynResolve(fr,fw):
 	hosts=ReadHost(fr)
@@ -45,20 +46,25 @@ class ThreadClass(threading.Thread):
 		threading.Thread.__init__(self)
 
 	def run(self):
+		global IPhost
 		try:
 			res=socket.getaddrinfo(self.host,None)
-			for re in res:
-				print host, re[4][0]
+			if mutex.acquire(1):
+				for re in res:
+					#self.IPhost[re[4][0]]=self.host
+					IPhost[re[4][0]]=self.host
+				mutex.release()
 		except Exception, e:
-			print e
+			#print self.host, e
+			pass
 
 
-def MulThreadResolve(fr,fw):
+def MulThreadResolve(fr):
+	start=ctime()
+	print 'starting MulThreadResolve at: ',start
 	hosts=ReadHost(fr)
-	IPs={}
 	threads=[]
 	for host in hosts:
-		print host
 		t=ThreadClass(host)
 		threads.append(t)
 			
@@ -69,8 +75,22 @@ def MulThreadResolve(fr,fw):
 	for i in range(cntHost):
 		threads[i].join()
 
+	print 'ending MulThreadResolve at :', ctime()
+
+def CntHost(IPhost):
+	host={}
+	for ip in IPhost:
+		host[IPhost[ip]]=1
+	return len(host)
+
 if __name__=='__main__':
-	start=time.time()
 	#SynResolve('hosts','IPs')
-	MulThreadResolve('hosts','IPs')
-	print time.time()-start
+	IPhost={}
+	mutex=threading.Lock()
+	MulThreadResolve('host1')
+	print CntHost(IPhost)
+	res=sorted(IPhost.iteritems(),key=lambda d:d[1],reverse=True)
+	WriteIPs('IPhost',res)
+	#print res
+	#for item in res:
+	#	print item[1],' ',item[0]
