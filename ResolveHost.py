@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import sys
 import socket
 from time import ctime
 import threading
@@ -55,8 +56,8 @@ class ThreadClass(threading.Thread):
 					IPhost[re[4][0]]=self.host
 				mutex.release()
 		except Exception, e:
-			#print self.host, e
-			pass
+			print self.host, e
+			#pass
 
 
 def MulThreadResolve(fr):
@@ -89,17 +90,16 @@ if __name__=='__main__':
 	SynResolve('hosts','IPs')
 	'''
 
-	'''
 	#each thread resolve one host
 	IPhost={}
 	mutex=threading.Lock()
-	MulThreadResolve('host1')
+	hostFile=sys.argv[1]
+	MulThreadResolve(hostFile)
 	print CntHost(IPhost)
 	res=sorted(IPhost.iteritems(),key=lambda d:d[1],reverse=True)
 	WriteIPs('IPhost',res)
 	#print res
 	#for item in res:
 	#	print item[1],' ',item[0]
-	'''
 
 
