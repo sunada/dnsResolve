@@ -2,7 +2,7 @@
 
 import sys
 import socket
-from time import ctime
+import time 
 import threading
 import Queue
 
@@ -37,9 +37,8 @@ def SynResolve(fr,fw):
 				IPs[result[4][0]]=host
 		except Exception,e:
 			print e
-	writeIPs(fw,IPs)
+	WriteIPs(fw,IPs)
 
-	file.close()
 
 class ThreadClass(threading.Thread):
 	def __init__(self,host):
@@ -61,7 +60,7 @@ class ThreadClass(threading.Thread):
 
 
 def MulThreadResolve(fr):
-	start=ctime()
+	#start=time.ctime()
 	print 'starting MulThreadResolve at: ',start
 	hosts=ReadHost(fr)
 	threads=[]
@@ -76,7 +75,7 @@ def MulThreadResolve(fr):
 	for i in range(cntHost):
 		threads[i].join()
 
-	print 'ending MulThreadResolve at :', ctime()
+	#print 'ending MulThreadResolve at :', ctime()
 
 def CntHost(IPhost):
 	host={}
@@ -85,12 +84,16 @@ def CntHost(IPhost):
 	return len(host)
 
 if __name__=='__main__':
-	'''
+	#'''
 	#resolve hosts one by one
+	start=time.time()
 	SynResolve('hosts','IPs')
-	'''
+	print 'time cost:',time.time()-start
+	#'''
 
+	'''
 	#each thread resolve one host
+	start=time.time()
 	IPhost={}
 	mutex=threading.Lock()
 	hostFile=sys.argv[1]
@@ -101,5 +104,6 @@ if __name__=='__main__':
 	#print res
 	#for item in res:
 	#	print item[1],' ',item[0]
-
+	print 'time cost:',time.time()-start
+	'''
 
