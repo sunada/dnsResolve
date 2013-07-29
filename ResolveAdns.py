@@ -16,10 +16,10 @@ def ReadFile(fr):
 def WriteFile(fw,ress):
     file=open(fw,'a')
     for res in ress:
-        print res[0]
-        print ress[res]
+        #print res[0]
+        #print ress[res]
         file.write(ress[res]+'		'+res[0]+'\n')
-        file.close()
+    file.close()
 
 class QueryEngine(object):
 
@@ -37,8 +37,9 @@ class QueryEngine(object):
             answer=q.check()
             qname,rr,flags=self._queries[q]
             del self._queries[q]
-            self.IPhost[answer[3]]=qname
-            print qname, '		',answer[3]
+            if answer[3]:
+                self.IPhost[answer[3]]=qname
+            #print qname, '		',answer[3]
 
     def finished(self):
         return not len(self._queries)
@@ -55,11 +56,14 @@ def resolveDns(fr,fw):
 
     while not qe.finished():
         qe.run()
-	
+
     print 'time cost:',time.time()-start
     IPhost=qe.getIPhost()
     WriteFile(fw,IPhost)
+    return len(hosts), len(IPhost)
 
 if __name__=='__main__':
     filename=sys.argv[1]
-    resolveDns(filename,'hostIP')
+    host_cnt, IP_cnt = resolveDns(filename,'hostIP')
+    print 'Resolve ' + unicode(host_cnt) + ' domains and get '\
+          + unicode(IP_cnt) + ' IPv6 address.'
