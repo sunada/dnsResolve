@@ -1,7 +1,7 @@
 dnsResolve
 ==========
 
-use adns to resolve thousands of hosts
+use adns to resolve thousands of hosts. You need the liberary of adns and adns-python to run the scripts of asycn_dns.py and resolve_adns.py
 
 example:
 
