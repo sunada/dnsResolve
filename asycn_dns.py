@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #########################################
 #
 # auther: Peteris Krumins
@@ -7,7 +9,6 @@
 ############################################
 
 
-#!/usr/bin/python
 #
 
 import adns
@@ -17,12 +18,13 @@ from time import time
 
 class AsyncResolver(object):
     def __init__(self, hostsfile,hostIPfile,intensity=100,nameserver='202.96.199.133'):
-        """
+        ''' 
         hostsfile: file of hosts waiting to be resolved
 	hostIPfile: file of hosts and their IPs 
         intensity: how many hosts to resolve at once
 	nameserver: dns server
-        """
+        '''
+
         self.hosts = open(hostsfile)
 	self.hostIP = open(hostIPfile,'a')
         self.intensity = intensity
@@ -98,12 +100,12 @@ class AsyncResolver(object):
 	
 if __name__ == "__main__":
 
-    #hosts=sys.argv[1]
-    #hostIP=sys.argv[2]
-    #intensity=sys.argv[3]
-    hosts = ['www.sina.com']
-    hostIP = 'abc'
-    intensity = '100'
+    hosts=sys.argv[1]
+    hostIP=sys.argv[2]
+    intensity=sys.argv[3]
+    #hosts = ['www.sina.com']
+    #hostIP = 'abc'
+    #intensity = '100'
     ar = AsyncResolver(hosts,hostIP,int(intensity))
     start = time()
     hostCnt,ipCnt = ar.resolve()  
