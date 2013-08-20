@@ -1,139 +1,156 @@
-   0 http://www.kame.net/
-   1 http://www.netbsd.org/
-   2 http://www.wide.ad.jp/news/press/20051107-KAME-e.html
-   3 http://releng.netbsd.org/
-   4 http://www.freebsd.org/
-   5 http://www.nec.co.jp/
-   6 http://wiki.netbsd.org/
-   7 http://blog.netbsd.org/
-   8 http://www.pkgsrc.org/
-   9 http://www.isc.org/
-  10 http://www.soi.wide.ad.jp/
-  11 http://www.freebsdfoundation.org/donate/
-  12 http://www.ai3.net/
-  13 http://www.pkgsrc.se/
-  14 http://www.iij.ad.jp/
-  15 http://www.ietf.org/
-  16 http://forums.freebsd.org/
-  17 http://www.mirbsd.org/
-  18 http://techlog.iij.ad.jp/archives/iijnews117
-  19 http://www.iana.org/
-  20 http://www.amsl.com/
-  21 http://giolog.iij.ad.jp/
-  22 http://datatracker.ietf.org/list/wg/
-  23 http://www.openldap.org/lists/ietf-ldapbis/
-  24 http://lists.ntp.org/pipermail/ntpwg/
-  25 http://lists.eyrie.org/pipermail/ietf-nntp/
-  26 http://www.icann.org/
-  27 http://archive.icann.org/
-  28 http://nomcom.icann.org/
-  29 http://newgtlds.icann.org/en/
-  30 http://www.apricot2013.net/
-  31 http://www.apricot.net/apricot2013/
-  32 http://www.cira.ca/news/events-page/2013-cif/
-  33 http://www.jpnap.net/english/
-  34 http://www.jpix.ad.jp/en/index.html
-  35 http://afilias.info/
-  36 http://www.vpnc.org/ipsec-policy/
-  37 http://www.progreso.com.sg/
-  38 http://www.interop.jp/2013/english/index.html
-  39 http://info.singtel.com/personal/
-  40 http://www.citrix.com/
-  41 http://www.iajapan.org/
-  42 http://releng.netbsd.org/index-pkgsrc.html
-  43 http://wiki.netbsd.org/projects/
-  44 http://gnats.netbsd.org/47408
-  45 http://www.soi.wide.ad.jp/contents.html
-  46 http://www.freebsdfoundation.org/
-  47 http://www.juniper.net/
-  48 http://www.iij.ad.jp/index.html
-  49 http://www.alaxala.com/jp/
-  50 http://www.apache.org/
-  51 http://www.rfc-editor.org/queue2.html
-  52 http://psg.com/lists/ietf-quality/
-  53 http://www.openldap.org/lists/
-  54 http://lists.eyrie.org/mailman/listinfo/ietf-nntp
-  55 http://www.gnu.org/software/mailman/index.html
-  56 http://www.python.org/
-  57 http://www.vpnc.org/ietf-ipsra/mail-archive/
-  58 http://www.aoemedia.de/
-  59 http://lists.ntp.org/listinfo/ntpwg
-  60 http://www.pygame.org/news.html
-  61 http://www.apnic.net/
-  62 http://www.jpnap.net/english/index.html
-  63 http://www.cacert.org/
-  64 http://wq.apnic.net/apnic-bin/whois.pl
-  65 http://afilias.info/about-us
-  66 http://www.nlnet.nl/
-  67 http://training.apnic.net/
-  68 http://info.info/whois
-  69 http://www.tunix.nl/
-  70 http://www.interop.jp/2012/english/index.html
-  71 http://www.internic.net/whois.html
-  72 http://www.kame.net/snap-users/mail-list.cgi
-  73 http://www.iajapan.org/sitemap.html
-  74 http://www.freebsd.org/about.html
-  75 http://gnso.icann.org/en/
-  76 http://www.freebsdfoundation.org/documents/Guidelines.shtml
-  77 http://www.soi.wide.ad.jp/en/contents.html
-  78 http://www.nlnetlabs.nl/
-  79 http://www.ai3.net/index.html
-  80 http://www.iij.ad.jp/contact/index.html
-  81 http://gnats.netbsd.org/13082
-  82 http://kokatsu.jp/blog/ipv4/
-  83 http://www.rfc-editor.org/
-  84 http://forums.freebsd.org/archive/index.php
-  85 http://www.jus.or.jp/
-  86 http://giolog.iij.ad.jp/about/
-  87 http://jprs.co.jp/
-  88 http://www.pir.org/home
-  89 http://www.soum.co.jp/
-  90 http://www.internetconference.org/ic2013/
-  91 http://www.itrc.net/
-  92 http://www.kmd.keio.ac.jp/
-  93 http://www.net-dns.org/
-  94 http://www.ckp.jp/
-  95 http://www.isoc.jp/
-  96 http://qgpop.net/
-  97 http://irtf.org/
-  98 http://koshien.asahi.co.jp/
-  99 http://www.supercsi.jp/ipv6deploy/
- 100 http://psg.com/lists/ietf-quality/maillist.html
- 101 http://www.ngotld.org/eoi
- 102 http://ipv6.he.net/certification/primer.php
- 103 http://www.stanford.edu/~huangty/
- 104 http://lists.eyrie.org/pipermail/ietf-nntp/2012-December/thread.html
- 105 http://lists.ntp.org/pipermail/ntpwg/2013-August/thread.html
- 106 http://bgp.he.net/ipv6-progress-report.cgi
- 107 http://code.he.net/
- 108 http://www.tunnelbroker.net/
- 109 http://www.gnu.org/
- 110 http://lg.he.net/
- 111 http://ictepc.jp/
- 112 http://www.vpnc.org/ietf-kink/
- 113 http://www.aoemedia.de/startseite.html
- 114 http://gtmetrix.com/
- 115 http://registro.br/
- 116 http://www.janog.gr.jp/
- 117 http://www.apricot-apan.asia/
- 118 http://www.jpnap.net/english/contactus/index.html
- 119 http://www.mrp.net/cgi-bin/ipv6-status.cgi
- 120 http://www.softlayer.com/
- 121 http://afilias.info/products-services
- 122 http://www.openldap.org/lists/ietf-ldapbis/201204/
- 123 http://training.apnic.net/home
- 124 http://ipv6.2ch.net/
- 125 http://ipv6.xkcd.com/
- 126 http://ipv6.sprint.com/
- 127 http://www.kame.net/index.html
- 128 http://www.iajapan.org/reference.html
- 129 http://info.info/
- 130 http://info.singtel.com/business/
- 131 http://www.bit.nl/home/
- 132 http://www.wide.ad.jp/index.html
- 133 http://www.freebsd.org/projects/newbies.html
- 134 http://gnats.netbsd.org/47016
- 135 http://ftp.netbsd.org/pub/NetBSD/
- 136 http://www.iij.ad.jp/sitemap/index.html
- 137 http://www.gossamer-threads.com/
- 138 http://www.mirbsd.org/main.htm
+http://www.kame.net/
+http://www.netbsd.org/
+http://www.wide.ad.jp/
+http://releng.netbsd.org/
+http://www.freebsd.org/
+http://www.nec.co.jp/
+http://wiki.netbsd.org/
+http://blog.netbsd.org/
+http://www.pkgsrc.org/
+http://www.isc.org/
+http://www.soi.wide.ad.jp/
+http://www.freebsdfoundation.org/
+http://www.ai3.net/
+http://www.pkgsrc.se/
+http://www.iij.ad.jp/
+http://www.ietf.org/
+http://forums.freebsd.org/
+http://www.mirbsd.org/
+http://techlog.iij.ad.jp/
+http://www.iana.org/
+http://www.amsl.com/
+http://giolog.iij.ad.jp/
+http://datatracker.ietf.org/
+http://www.openldap.org/
+http://lists.ntp.org/
+http://lists.eyrie.org/
+http://www.icann.org/
+http://archive.icann.org/
+http://nomcom.icann.org/
+http://newgtlds.icann.org/
+http://www.apricot2013.net/
+http://www.apricot.net/
+http://www.cira.ca/
+http://www.jpnap.net/
+http://www.jpix.ad.jp/
+http://afilias.info/
+http://www.vpnc.org/
+http://www.progreso.com.sg/
+http://www.interop.jp/
+http://info.singtel.com/
+http://www.citrix.com/
+http://www.iajapan.org/
+http://gnats.netbsd.org/
+http://www.juniper.net/
+http://www.alaxala.com/
+http://www.apache.org/
+http://www.rfc-editor.org/
+http://psg.com/
+http://www.gnu.org/
+http://www.python.org/
+http://www.aoemedia.de/
+http://www.pygame.org/
+http://www.apnic.net/
+http://www.cacert.org/
+http://wq.apnic.net/
+http://www.nlnet.nl/
+http://training.apnic.net/
+http://info.info/
+http://www.tunix.nl/
+http://www.internic.net/
+http://gnso.icann.org/
+http://www.nlnetlabs.nl/
+http://kokatsu.jp/
+http://www.jus.or.jp/
+http://jprs.co.jp/
+http://www.pir.org/
+http://www.soum.co.jp/
+http://www.internetconference.org/
+http://www.itrc.net/
+http://www.kmd.keio.ac.jp/
+http://www.net-dns.org/
+http://www.ckp.jp/
+http://www.isoc.jp/
+http://qgpop.net/
+http://irtf.org/
+http://koshien.asahi.co.jp/
+http://www.supercsi.jp/
+http://www.ngotld.org/
+http://ipv6.he.net/
+http://www.stanford.edu/
+http://bgp.he.net/
+http://code.he.net/
+http://www.tunnelbroker.net/
+http://lg.he.net/
+http://ictepc.jp/
+http://gtmetrix.com/
+http://registro.br/
+http://www.janog.gr.jp/
+http://www.apricot-apan.asia/
+http://www.mrp.net/
+http://www.softlayer.com/
+http://ipv6.2ch.net/
+http://ipv6.xkcd.com/
+http://ipv6.sprint.com/
+http://www.bit.nl/
+http://ftp.netbsd.org/
+http://www.gossamer-threads.com/
+http://www.softwareishard.com/
+http://www.cetic.br/
+http://knowledgelayer.softlayer.com/
+http://outlet.softlayer.com/
+http://www.panoramio.com/
+http://www.google.com.ua/
+http://mawi.wide.ad.jp/
+http://www.qgpop.net/
+http://www.iijlab.net/
+http://noc.bit.nl/
+http://www.caida.org/
+http://cartilha.cert.br/
+http://cgi.br/
+http://wiki.tools.ietf.org/
+http://www.google.co.kr/
+http://www.ist-mome.org/
+http://ita.ee.lbl.gov/
+http://www.jp.ipv6forum.com/
+http://forums.softlayer.com/
+http://www.cert.br/
+http://www.e-side.co.jp/
+http://www.mt.cs.keio.ac.jp/
+http://internetsegura.br/
+http://web.sfc.wide.ad.jp/
+http://www.jpcert.or.jp/
+http://berkeley.edu/
+http://calparents.berkeley.edu/
+http://conference.apnic.net/
+http://honeytarg.cert.br/
+http://www.linux-ipv6.org/
+http://www.durand.com.br/
+http://www.soi.asia/
+http://pkgsrc.se/
+http://www.pop-pr.rnp.br/
+http://www.stb.gov.sg/
+http://www.whooppee.com/
+http://www.cyberciti.biz/
+http://ipv6.terra.com.br/
+http://vincent.bernat.im/
+http://www.ntts.co.jp/
+http://www.ctir.gov.br/
+http://www.cert-rs.tche.br/
+http://www.pop-es.rnp.br/
+http://fsfe.org/
+http://www.rp.edu.sg/
+http://packages.qa.debian.org/
+http://www.hdb.gov.sg/
+http://inagist.com/
+http://www.ite.edu.sg/
+http://whyichose.org/
+http://www.osnews.com/
+http://code.google.com/
+http://www.us-cert.gov/
+http://www.cgi.br/
+http://lintian.debian.org/
+http://www.live-e.org/
+http://patch-tracker.debian.org/
+http://panorama.pop-es.rnp.br/
+http://cartilla.cert.br/
