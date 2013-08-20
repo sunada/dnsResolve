@@ -5,7 +5,7 @@ use adns to resolve thousands of hosts. You need the liberary of adns and adns-p
 
 example:
 
-./asycn_dns.py hosts hostIPs 1000 8.8.8.8.
+./asycn_dns.py hosts hostIPs 1000 
 
 hosts: a file of hosts
 
@@ -13,7 +13,6 @@ hostIPs: a file to save hosts and their IPs
 
 1000: the intensity. The default value of intensity is 100
 
-8.8.8.8: nameserver. The default value of nameserver is 202.96.199.133
 
 example:
 ./resolve_adns.py hosts_ipv6
