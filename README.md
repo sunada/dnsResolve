@@ -3,9 +3,11 @@ dnsResolve
 
 use adns to resolve thousands of hosts. You need the liberary of adns and adns-python to run the scripts of asycn_dns.py and resolve_adns.py
 
+(some hosts have both ipv4 and ipv6 addresses.)
+
 example:
 
-./asycn_dns.py hosts hostIPs 1000 
+./asycn_dns.py hosts_ipv6 hostIPs_asycn_dns 1000 
 
 hosts: a file of hosts
 
