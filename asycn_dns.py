@@ -1,3 +1,11 @@
+#########################################
+#
+# auther: Peteris Krumins
+# website: www.catonmat.net/blog/asynchronous-dns-resolution/
+#
+############################################
+
+
 #!/usr/bin/python
 #
 
@@ -89,9 +97,12 @@ class AsyncResolver(object):
 	
 if __name__ == "__main__":
 
-    hosts=sys.argv[1]
-    hostIP=sys.argv[2]
-    intensity=sys.argv[3]
+    #hosts=sys.argv[1]
+    #hostIP=sys.argv[2]
+    #intensity=sys.argv[3]
+    hosts = ['www.sina.com']
+    hostIP = 'abc'
+    intensity = '100'
     ar = AsyncResolver(hosts,hostIP,int(intensity))
     start = time()
     hostCnt,ipCnt = ar.resolve()  
