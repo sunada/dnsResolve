@@ -1,3 +1,10 @@
+##########################################################
+# author: Ada Sun
+# date: 2013/8/20
+# function: using multi-thread and socket.getaddrinfo() to resolve hosts
+############################################################
+
+
 #!/usr/bin/python
 
 import sys
