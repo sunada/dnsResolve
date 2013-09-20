@@ -1,3 +1,10 @@
+####################################################
+# author: Ada Sun
+# date: 2013/8/20
+# function: read host from the file then resolve them to ipv6 addresses and write them down to a new file.
+########################################################
+
+
 #!/usr/bin/python
 
 import adns
