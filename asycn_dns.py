@@ -2,6 +2,7 @@
 #
 # auther: Peteris Krumins
 # website: www.catonmat.net/blog/asynchronous-dns-resolution/
+# function: reslove the IPv4 address of given hosts
 #
 ############################################
 
